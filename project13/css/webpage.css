@@ -122,6 +122,13 @@
     padding-right: 8px;
   }
 
+<<<<<<< HEAD
   .pop {
       
+=======
+  /* Background image, aka the map */
+  body {
+    background-image: url("/projectmapv2.png");
+    background-color: olivedrab
+>>>>>>> 1e6a8fed2dc2f8255fc3139d78bb298a8fb6d372
   }
