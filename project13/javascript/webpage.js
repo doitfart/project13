@@ -24,15 +24,9 @@ for (i = 0; i < dropdown.length; i++) {
 
 $("slug").append("<button id='slug1'>Sammy</button>");
 
-$("slug1").click(function(){
-    $("slug1").toggleClass("pop")
+$("#slug1").click(function(){
+    $(this).parent().toggleClass("pop");
     
-});
+})
 
-var $overlay = $("<div>",{
-
-
-}
-
-)
 
