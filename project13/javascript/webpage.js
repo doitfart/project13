@@ -29,10 +29,4 @@ $("slug1").click(function(){
     
 });
 
-var $overlay = $("<div>",{
-
-
-}
-
-)
 
