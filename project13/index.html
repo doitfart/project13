@@ -78,16 +78,53 @@
 
 	</body>
 
+  <body>
+    <h3>Button Test</h3>
+  </body>
+<head>
+  <style>
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 9999;
+    }
+
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      padding: 20px;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      z-index: 10000;
+    }
+  </style>
+</head>
 <body>
   <button id="slug1"><img src="icons/sammy2Asset 18.png" width="100px"></button>
 
   <div class="overlay"></div>
   <div class="popup">
     <h2>Pop-up Content</h2>
-    <p>This is a pop-up!</p>
-    <button id="closeButton">Close</button>
+    <p>This is a pop-up.</p>
+    <img src="pictures/IMG_9420.jpeg"
+    width="200px">
+    <iframe src="https://earth.google.com/web/search/Oakes+College,+Oakes+Road,+Santa+Cruz,+CA/@36.9894756,-122.0628583,185.129443a,823.54801931d,35y,0h,45t,0r/data=CpQBGmoSZAolMHg4MDhlNDE5OWI4ODdmZTZiOjB4NjA0YjI2MTI4YTYwNTUyMxlRGO8ip35CQCEOstHeBYRewCopT2FrZXMgQ29sbGVnZSwgT2FrZXMgUm9hZCwgU2FudGEgQ3J1eiwgQ0EYAiABIiYKJAkBqlyOh4BCQBGU8QEzwn5CQBlFr2uRZ4NewCFHyOnrYIRewCgC" style="width:100%; height:100vh;"></iframe>
+
+    <button id="closeButton">Back</button>
   </div>
   
 </body>
 
+
 </html>
+
