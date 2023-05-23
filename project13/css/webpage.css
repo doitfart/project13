@@ -121,3 +121,9 @@
     float: right;
     padding-right: 8px;
   }
+
+  /* Background image, aka the map */
+  body {
+    background-image: url("/projectmapv2.png");
+    background-color: olivedrab
+  }
