@@ -134,7 +134,6 @@
     z-index: 9999;
   }
 
-
   .popup {
     display: none;
     position: fixed;
@@ -149,9 +148,8 @@
     z-index: 10000;
   }
 
-  body {
-    background-image: url(projectmapv2.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
+
+
+ 
+
+  
