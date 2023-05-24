@@ -122,7 +122,12 @@
     padding-right: 8px;
   }
 
-
+  body {
+    background-image: url(projectmapv2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
 
  
 
