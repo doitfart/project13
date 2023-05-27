@@ -28,19 +28,10 @@ $("#slug1").click(function(){
     $(this).parent().toggleClass("pop");
     
 })
+$("deer").append("<button id='deer1'>Deer</button>");
 
+$("#deer1").click(function(){
+    $(this).parent().toggleClass("popup");
 
-$(document).ready(function() {
-  // Open the pop-up when the button is clicked
-  $('#slug1').click(function() {
-    $('.overlay').fadeIn();
-    $('.popup').fadeIn();
-  });
-
-  // Close the pop-up when the close button is clicked
-  $('#closeButton').click(function() {
-    $('.overlay').fadeOut();
-    $('.popup').fadeOut();
-  });
-});
+})
 
