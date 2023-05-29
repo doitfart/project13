@@ -22,16 +22,19 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 
+
+
 $("slug").append("<button id='slug1'>Sammy</button>");
 
 $("#slug1").click(function(){
     $(this).parent().toggleClass("pop");
     
 })
+
 $("deer").append("<button id='deer1'>Deer</button>");
 
 $("#deer1").click(function(){
-    $(this).parent().toggleClass("popup");
+    $(this).parent().toggleClass("pop");
 
 })
 
