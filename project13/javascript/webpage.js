@@ -23,30 +23,16 @@ for (i = 0; i < dropdown.length; i++) {
 }
 
 
-
-$("slug").append("<button id='slug1'>Sammy</button>");
-
-$("#slug1").click(function(){
-    $(this).parent().toggleClass("pop");
-    
-})
-
-$("deer").append("<button id='deer1'>Deer</button>");
-
-$("#deer1").click(function(){
-    $(this).parent().toggleClass("pop");
-
-})
-
 $(document).ready(function() {
   // Open the pop-up when the button is clicked
-  $('#slug1').click(function() {
+  $('.popupButton').click(function() {
+    var target = $(this).data('target');
+    $('#' + target).fadeIn();
     $('.overlay').fadeIn();
-    $('.popup').fadeIn();
   });
 
   // Close the pop-up when the close button is clicked
-  $('#closeButton').click(function() {
+  $('.closeButton').click(function() {
     $('.overlay').fadeOut();
     $('.popup').fadeOut();
   });
