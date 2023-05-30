@@ -38,3 +38,16 @@ $("#deer1").click(function(){
 
 })
 
+$(document).ready(function() {
+  // Open the pop-up when the button is clicked
+  $('#slug1').click(function() {
+    $('.overlay').fadeIn();
+    $('.popup').fadeIn();
+  });
+
+  // Close the pop-up when the close button is clicked
+  $('#closeButton').click(function() {
+    $('.overlay').fadeOut();
+    $('.popup').fadeOut();
+  });
+});
