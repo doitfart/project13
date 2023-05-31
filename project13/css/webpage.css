@@ -50,18 +50,6 @@
   background-color: #444;
 }
 
-.filter {
-  bottom: 80px;
-  color: #818181;
-  font-size: 17px;
-  padding: 8px 8px 8px 16px;
-  position: absolute;
-}
-
-#submit {
-  background-color: white;
-}
-
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
@@ -134,35 +122,10 @@
     padding-right: 8px;
   }
 
-  body {
-    background-image: url(projectmapv3.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-  }
+.body {
+  background-color: rgb(59, 119, 59)
+}
+
+ 
 
   
-    .overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-      z-index: 9999;
-    }
-
-    .popup {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 400px;
-      padding: 20px;
-      background-color: white;
-      border-radius: 5px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-      z-index: 10000;
-    }
