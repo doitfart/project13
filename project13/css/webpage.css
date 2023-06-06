@@ -122,11 +122,20 @@
     padding-right: 8px;
   }
 
-  body {
-    background-image: url(projectmapv3.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  .image-container {
+    position: relative;
+  }
+  
+  .background-image {
+    position: absolute;
+  
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
   }
 
   
@@ -154,3 +163,7 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       z-index: 10000;
     }
+
+
+
+   
