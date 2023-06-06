@@ -1,42 +1,31 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Points of Interest</title>
 
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="css/webpage.css">
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script type="text/javascript" src="./javascript/webpage.js" DEFER></script>
-    <!-- Include a sitewide CSS file for consistent styling across the site -->
-    <style>
-      /* Update the button style to make it transparent */
-      button {
-          background-color: transparent;
-          border: none;
-          cursor: pointer;
-          outline: none;
-      }
-  </style>
- 
+    
+        <title>Points of Interest</title>
 
-	</head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="css/webpage.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="./javascript/webpage.js" DEFER></script>
+        <!-- Include a sitewide CSS file for consistent styling across the site -->
+        <style>
+          /* Update the button style to make it transparent */
+          button {
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              outline: none;
+          }
+        </style>
+    </head>
 
-	<body>
-
-        <h2>Homepage</h2>
-		<div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <button class="dropdown-btn">ABOUT
-                <i class="fa fa-caret-down"></i>
-              </button>
-            <div class="dropdown-container">
-                <a href="#">The Project</a>
-                <a href="#">The Authors</a>
-            </div>
-          <button class="dropdown-btn">STUDY SPOTS <img src="icons/openbookAsset 3.png" width="35px">
-                <i class="fa fa-caret-down"></i>
-              </button>
+      <body>
+        <div class="image-container">
+          <img src="pictures/projectmapv3.png" alt="Background Image" class="background-image">
+          <div class="content">
             
             <div class="dropdown-container">
                 <a href="#">Mchenry Library</a>
@@ -187,4 +176,169 @@
 
 
 </html>
+            <div id="mySidebar" class="sidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <button class="dropdown-btn">ABOUT
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-container">
+                        <a href="#">The Project</a>
+                        <a href="#">The Authors</a>
+                    </div>
+                  <button class="dropdown-btn">STUDY SPOTS <img src="icons/openbookAsset 3.png" width="35px">
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    
+                    <div class="dropdown-container">
+                        <a href="#">Mchenry Library</a>
+                        <a href="#">S & E Library</a>
+                        <a href="#">Stevenson Library</a>
+                        <a href="#">Porter Study Room</a>
+                        <a href="#">Namaste Lounge</a>
+                        <a href="#">Terry Freitas Commons</a>
+                    </div>
+                    <button class="dropdown-btn">ANIMAL SIGHTINGS<img src="icons/sammy2Asset 18.png" width="35px">
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-container">
+                        <a href="#">Banana Slugs</a>
+                        <a href="#">Deer</a>
+                        <a href="#">Koi Fish</a>
+                        <a href="#">Turkeys</a>
+                        <a href="#">Squirrels</a>
+                    </div>
+                    <button class="dropdown-btn">CAFES <img src="icons/hotcoffeeAsset 5.png" width="30px">
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-container">
+                        <a href="#">Perk Coffee Bars</a>
+                        <a href="#">Porter Market</a>
+                        <a href="#">Merrill Market</a>
+                        <a href="#">Cowell Coffee Shop</a>
+                        <a href="#">Oakes Cafe</a>
+                        <a href="#">Stevenson Coffee House</a>
+                        <a href="#">Global Village Cafe</a>
+                    </div>
+                    <button class="dropdown-btn">PHOTO-OPS <img src="icons/cameraAsset 13.png" width="30px">
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-container">
+                        <a href="#">The Squiggle</a>
+                        <a href="#">East Field</a>
+                        <a href="#">Oakes Lower Lawn</a>
+                        <a href="#">College 9 Murals</a>
+                        <a href="#">Campus Entrance</a>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <button class="dropdown-btn">FIND YOUR IDEAL STUDY SPACE HERE!
+                    </button>
+                  <div class="dropdown-container">
+                    <div class="filter">
+                      <p id="noise">Noise Level</p>
+                        <input type="checkbox" id="lively">
+                          <label for="lively">Lively</label>
+                        <input type="checkbox" id="moderate">
+                          <label for="moderate">Moderate</label>
+                        <br>
+                          <input type="checkbox" id="silent">
+                          <label for="silent">Silent</label>
+                      <p id="food">Food Nearby</p>
+                        <input type="checkbox" id="yes">
+                          <label for="yes">Yes</label>
+                        <input type="checkbox" id="no">
+                          <label for="no">No</label>
+                      <p id="seating">Seating</p>
+                        <input type="checkbox" id="inside">
+                          <label for="inside">Inside</label>
+                        <input type="checkbox" id="outside">
+                          <label for="outside">Outside</label>
+                          <label for="outside">Moderate</label>
+                        <input type="checkbox" id="both">
+                          <label for="both">Both</label>
+                      <p></p>
+                      <button type="button" id="submit">Submit</button>
+                    </div>
+                  </div>
+
+                
+
+              </div>
+                <div id="main">
+                  <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+                </div>
+            
+
+        
+            <style>
+              .overlay {
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index: 9999;
+              }
+
+                .popup {
+                  display: none;
+                  position: fixed;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 400px;
+                  padding: 20px;
+                  background-color: white;
+                  border-radius: 5px;
+                  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+                  z-index: 10000;
+                }
+            </style>
+              
+            <html>
+              <body>
+                <button class="popupButton" data-target="slug1"><img src="icons/sammy2Asset 18.png" 
+                  width="75px"
+                ></button>
+                <div class="overlay"></div>
+                <div class="popup" id="slug1">
+                  <h2>Banana Slug</h2>
+                  <p>You'll find Sammys everywhere, but this spot is always a good place to spot one after it rains!</p>
+                  <img src="pictures/slug.jpeg" width="200px">
+                  <br>
+                  <a href="https://earth.google.com/web/search/Oakes+College,+Oakes+Road,+Santa+Cruz,+CA/@36.9894756,-122.0628583,185.129443a,823.54801931d,35y,0h,45t,0r/data=CpQBGmoSZAolMHg4MDhlNDE5OWI4ODdmZTZiOjB4NjA0YjI2MTI4YTYwNTUyMxlRGO8ip35CQCEOstHeBYRewCopT2FrZXMgQ29sbGVnZSwgT2FrZXMgUm9hZCwgU2FudGEgQ3J1eiwgQ0EYAiABIiYKJAkBqlyOh4BCQBGU8QEzwn5CQBlFr2uRZ4NewCFHyOnrYIRewCgC" target="_blank">Google Earth</a>
+                  <br>
+                  <br>
+                  <button class="closeButton">Back</button>
+                </div>
+              </body>
+
+              <body>
+                <button class="popupButton" data-target="deer2"><img src="icons/deerAsset 17.png" 
+                  width="60px"
+                  height="70px"
+                ></button>
+                <div class="overlay"></div>
+                <div class="popup" id="deer2">
+                  <h2>Deers</h2>
+                  <p>Deers love our campus! You'll be sure to find a family of deer here during your days at UCSC. </p>
+                  <img src="pictures/deerporter.jpg" width="300px">
+                  <br>
+                  <a href="https://earth.google.com/web/search/Porter+College,+High+Street,+Santa+Cruz,+CA/@36.9943377,-122.0652388,219.1661936a,823.49020812d,35y,0h,45t,0r/data=CpYBGmwSZgolMHg4MDhlNDE5ZWVkMDZhNzlkOjB4NWY4MTcwNjAwZWJmMWJlORkFVy91Rn9CQCGJG1zfLIRewCorUG9ydGVyIENvbGxlZ2UsIEhpZ2ggU3RyZWV0LCBTYW50YSBDcnV6LCBDQRgCIAEiJgokCVA_1lTDgEJAETWygOhkfkJAGb4dyYZ3g17AISaElI3GhF7AKAI" target="_blank">Google Earth</a>
+                  <br>
+                  <br>
+                  <button class="closeButton">Back</button>
+                  </div>
+              </body>
+ 
+            </html>
+          </div>
+        </div>
+</body>
+
+
 
