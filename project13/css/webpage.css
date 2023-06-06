@@ -1,21 +1,4 @@
 /* The sidebar menu */
-
-.image-container {
-  position: relative;
-}
-
-.background-image {
-  position: absolute;
-
-  max-width: 100%;
-  height: auto;
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-}
-
 .sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -151,13 +134,13 @@
     padding-right: 8px;
   }
 
- /* body {
+  body {
     background-image: url(projectmapv3.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
-*/
+
   
     .overlay {
       display: none;
@@ -183,5 +166,3 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       z-index: 10000;
     }
-
-    
