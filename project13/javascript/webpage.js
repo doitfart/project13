@@ -37,3 +37,14 @@ $(document).ready(function() {
     $('.popup').fadeOut();
   });
 });
+
+//id for individual button
+var BSlink = document.getElementById("BS1");
+var TestButton1 = document.getElementById("BSbutton");
+BSlink.addEventListener("click", function() {
+  if (TestButton1.classList.contains("hidden")) {
+    TestButton1.classList.remove("hidden");
+  } else {
+    TestButton1.classList.add("hidden");
+  }
+});
