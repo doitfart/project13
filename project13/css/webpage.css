@@ -50,18 +50,6 @@
   background-color: #444;
 }
 
-.filter {
-  bottom: 80px;
-  color: #818181;
-  font-size: 17px;
-  padding: 8px 8px 8px 16px;
-  position: absolute;
-}
-
-#submit {
-  background-color: white;
-}
-
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s; /* If you want a transition effect */
