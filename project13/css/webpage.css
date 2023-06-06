@@ -124,11 +124,11 @@
 
   .image-container {
     position: relative;
+
   }
   
   .background-image {
     position: absolute;
-  
     max-width: 100%;
     height: auto;
   }
