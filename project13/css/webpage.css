@@ -1,4 +1,7 @@
 /* The sidebar menu */
+
+
+
 .sidebar {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
@@ -128,13 +131,13 @@
 
   .image-container {
     position: relative;
-
   }
   
   .background-image {
     position: absolute;
     max-width: 100%;
     height: auto;
+    size: cover;
   }
   
   .content {
@@ -142,7 +145,6 @@
     z-index: 1;
   }
 
-  
     .overlay {
       display: none;
       position: fixed;
@@ -167,6 +169,7 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
       z-index: 10000;
     }
+
 
 
 
