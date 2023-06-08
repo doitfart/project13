@@ -29,8 +29,6 @@ function openNav() {
     });
   }
   
- 
-
 
 $(document).ready(function() {
   // Open the pop-up when the button is clicked
@@ -47,7 +45,11 @@ $(document).ready(function() {
   });
 });
 
+var myButton = document.getElementById("button");
+myButton.addEventListener("click", function filter() {
+    document.getElementById("output").innerHTML
 
+})
 
 function filter() {
   document.getElementById(mchenry).style.opacity = 1;
