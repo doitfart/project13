@@ -47,6 +47,8 @@ $(document).ready(function() {
   });
 });
 
+
+
 function filter() {
   document.getElementById(mchenry).style.opacity = 1;
   document.getElementById(porter).style.opacity = 1;
@@ -84,3 +86,4 @@ function filter() {
     document.getElementById(tfc).style.opacity = 0;
   }
 }
+
