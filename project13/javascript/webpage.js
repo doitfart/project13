@@ -29,8 +29,6 @@ function openNav() {
     });
   }
   
- 
-
 
 $(document).ready(function() {
   // Open the pop-up when the button is clicked
@@ -45,4 +43,49 @@ $(document).ready(function() {
     $('.overlay').fadeOut();
     $('.popup').fadeOut();
   });
+<<<<<<< HEAD
 });
+=======
+});
+
+function filter() {
+  document.getElementById("mchenry").style.opacity = 1;
+  document.getElementById("porter").style.opacity = 1;
+  document.getElementById("se").style.opacity = 1;
+  document.getElementById("stevensonlib").style.opacity = 1;
+  document.getElementById("namaste").style.opacity = 1;
+  document.getElementById("tfc").style.opacity = 1;
+ 
+  var lively = document.getElementById("lively");
+  var moderate = document.getElementById("moderate");
+  var quiet = document.getElementById("quiet");
+  var yes = document.getElementById("yes");
+  var no = document.getElementById("no");
+  var inside = document.getElementById("inside");
+  var outside = document.getElementById("outside");
+  var both = document.getElementById("both");
+
+  if (moderate.checked == true && yes.checked == true && both.checked == true) {
+    document.getElementById("porter").style.opacity = 0;
+    document.getElementById("se").style.opacity = 0;
+    document.getElementById("stevensonlib").style.opacity = 0;
+    return;
+  }
+  else if (quiet.checked == true && yes.checked == true && inside.checked == true) {
+    document.getElementById("mchenry").style.opacity = 0;
+    document.getElementById("se").style.opacity = 0;
+    document.getElementById("namaste").style.opacity = 0;
+    document.getElementById("tfc").style.opacity = 0;
+    return;
+  }
+  else if (lively.checked == true && yes.checked == true && inside.checked == true) {
+    document.getElementById("mchenry").style.opacity = 0;
+    document.getElementById("porter").style.opacity = 0;
+    document.getElementById("stevensonlib").style.opacity = 0;
+    document.getElementById("namaste").style.opacity = 0;
+    document.getElementById("tfc").style.opacity = 0;
+    return;
+  }
+}
+
+>>>>>>> d21484c5227e19b9ac79d722a133b004e36c9c04
