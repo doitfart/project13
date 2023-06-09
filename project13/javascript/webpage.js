@@ -53,12 +53,12 @@ myButton.addEventListener("click", function filter() {
 
 
 function filter() {
-  document.getElementById(mchenry).style.opacity = 1;
-  document.getElementById(porter).style.opacity = 1;
-  document.getElementById(se).style.opacity = 1;
-  document.getElementById(stevensonlib).style.opacity = 1;
-  document.getElementById(namaste).style.opacity = 1;
-  document.getElementById(tfc).style.opacity = 1;
+  document.getElementById("mchenry").style.opacity = 1;
+  document.getElementById("porter").style.opacity = 1;
+  document.getElementById("se").style.opacity = 1;
+  document.getElementById("stevensonlib").style.opacity = 1;
+  document.getElementById("namaste").style.opacity = 1;
+  document.getElementById("tfc").style.opacity = 1;
  
   var lively = document.getElementById("lively");
   var moderate = document.getElementById("moderate");
@@ -71,22 +71,22 @@ function filter() {
 
 
   if (moderate.checked == true && yes.checked == true && both.checked == true) {
-    document.getElementById(porter).style.opacity = 0;
-    document.getElementById(se).style.opacity = 0;
-    document.getElementById(stevensonlib).style.opacity = 0;
+    document.getElementById("porter").style.opacity = 0;
+    document.getElementById("se").style.opacity = 0;
+    document.getElementById("stevensonlib").style.opacity = 0;
   }
   else if (quiet.checked == true && yes.checked == true && inside.checked == true) {
-    document.getElementById(mchenry).style.opacity = 0;
-    document.getElementById(se).style.opacity = 0;
-    document.getElementById(namaste).style.opacity = 0;
-    document.getElementById(tfc).style.opacity = 0;
+    document.getElementById("mchenry").style.opacity = 0;
+    document.getElementById("se").style.opacity = 0;
+    document.getElementById("namaste").style.opacity = 0;
+    document.getElementById("tfc").style.opacity = 0;
   }
   else if (lively.checked == true && yes.checked == true && inside.checked == true) {
-    document.getElementById(mchenry).style.opacity = 0;
-    document.getElementById(porter).style.opacity = 0;
-    document.getElementById(stevensonlib).style.opacity = 0;
-    document.getElementById(namaste).style.opacity = 0;
-    document.getElementById(tfc).style.opacity = 0;
+    document.getElementById("mchenry").style.opacity = 0;
+    document.getElementById("porter").style.opacity = 0;
+    document.getElementById("stevensonlib").style.opacity = 0;
+    document.getElementById("namaste").style.opacity = 0;
+    document.getElementById("tfc").style.opacity = 0;
   }
 }
 
