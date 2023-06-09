@@ -47,9 +47,10 @@ $(document).ready(function() {
 
 var myButton = document.getElementById("button");
 myButton.addEventListener("click", function filter() {
-    document.getElementById("output").innerHTML
-
+    console.log("clicked");
+    document.getElementById("output")
 })
+
 
 function filter() {
   document.getElementById(mchenry).style.opacity = 1;
