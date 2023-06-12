@@ -43,9 +43,6 @@ $(document).ready(function() {
     $('.overlay').fadeOut();
     $('.popup').fadeOut();
   });
-<<<<<<< HEAD
-});
-=======
 });
 
 function filter() {
@@ -88,4 +85,3 @@ function filter() {
   }
 }
 
->>>>>>> d21484c5227e19b9ac79d722a133b004e36c9c04
