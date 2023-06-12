@@ -1,6 +1,8 @@
 /* The sidebar menu */
 
-
+.hidden-button {
+  display: none;
+}
 
 .sidebar {
   height: 100%; /* 100% Full-height */
@@ -82,6 +84,7 @@
     overflow-x: hidden;
     padding-top: 20px;
   }
+
   
   /* Style the sidenav links and the dropdown button */
   .sidenav a, .dropdown-btn {
