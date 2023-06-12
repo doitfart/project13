@@ -163,6 +163,22 @@ Array.from(sidebarLinks).forEach(link => {
       }
       targetButton.style.display = 'block';
       currentButton = targetButton;
+     } else {
+      // If the same button is clicked again, hide it
+      targetButton.style.display = 'none';
+      currentButton = null;
     }
   });
+});
+
+document.addEventListener('click', function(event) {
+  const targetElement = event.target;
+
+  // Check if the clicked element is outside the sidebar area
+  if (!targetElement.classList.contains('sidebar-link') && !targetElement.classList.contains('hidden-button')) {
+    if (currentButton) {
+      currentButton.style.display = 'none';
+      currentButton = null;
+    }
+  }
 });
