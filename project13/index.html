@@ -36,7 +36,7 @@
                 <i class="fa fa-caret-down"></i>
               </button>
             <div class="dropdown-container">
-                <a href="#">The Project</a>
+                <a href="#" >The Project</a>
                 <a href="#">The Authors</a>
             </div>
           <button class="dropdown-btn">STUDY SPOTS <img src="icons/openbookAsset 3.png" width="35px">
@@ -44,44 +44,44 @@
               </button>
             
             <div class="dropdown-container">
-                <a href="#">Mchenry Library</a>
-                <a href="#">S & E Library</a>
-                <a href="#">Stevenson Library</a>
-                <a href="#">Porter Study Room</a>
-                <a href="#">Namaste Lounge</a>
-                <a href="#">Terry Freitas Commons</a>
+                <a href="#" class="sidebar-link" data-target="button1">Mchenry Library</a>
+                <a href="#" class="sidebar-link" data-target="button2">S & E Library</a>
+                <a href="#" class="sidebar-link" data-target="button3">Stevenson Library</a>
+                <a href="#" class="sidebar-link" data-target="button4">Porter Study Room</a>
+                <a href="#" class="sidebar-link" data-target="button5">Namaste Lounge</a>
+                <a href="#" class="sidebar-link" data-target="button6">Terry Freitas Commons</a>
             </div>
             <button class="dropdown-btn">ANIMAL SIGHTINGS<img src="icons/sammy2Asset 18.png" width="35px">
                 <i class="fa fa-caret-down"></i>
               </button>
             <div class="dropdown-container">
-                <a href="#">Banana Slugs</a>
-                <a href="#">Deer</a>
-                <a href="#">Koi Fish</a>
-                <a href="#">Turkeys</a>
-                <a href="#">Squirrels</a>
+                <a href="#" class="sidebar-link" data-target="button7">Banana Slugs</a>
+                <a href="#" class="sidebar-link" data-target="button8">Deer</a>
+                <a href="#" class="sidebar-link" data-target="button9">Koi Fish</a>
+                <a href="#" class="sidebar-link" data-target="button10">Turkeys</a>
+                <a href="#" class="sidebar-link" data-target="button11">Squirrels</a>
             </div>
             <button class="dropdown-btn">CAFES <img src="icons/hotcoffeeAsset 5.png" width="30px">
                 <i class="fa fa-caret-down"></i>
               </button>
             <div class="dropdown-container">
-              <a href="#">Perk Coffee Bars</a>
-              <a href="#">Porter Market</a>
-              <a href="#">Merrill Market</a>
-              <a href="#">Cowell Coffee Shop</a>
-              <a href="#">Oakes Cafe</a>
-              <a href="#">Stevenson Coffee House</a>
-              <a href="#">Global Village Cafe</a>
+              <a href="#" class="sidebar-link" data-target="button12">Perk Coffee Bars</a>
+              <a href="#" class="sidebar-link" data-target="button13">Porter Market</a>
+              <a href="#" class="sidebar-link" data-target="button14">Merrill Market</a>
+              <a href="#" class="sidebar-link" data-target="button15">Cowell Coffee Shop</a>
+              <a href="#" class="sidebar-link" data-target="button16">Oakes Cafe</a>
+              <a href="#" class="sidebar-link" data-target="button17">Stevenson Coffee House</a>
+              <a href="#" class="sidebar-link" data-target="button18">Global Village Cafe</a>
           </div>
             <button class="dropdown-btn">PHOTO-OPS <img src="icons/cameraAsset 13.png" width="30px">
                 <i class="fa fa-caret-down"></i>
               </button>
             <div class="dropdown-container">
-                <a href="#">The Squiggle</a>
-                <a href="#">East Field</a>
-                <a href="#">Oakes Lower Lawn</a>
-                <a href="#">College 9 Murals</a>
-                <a href="#">Campus Entrance</a>
+                <a href="#" class="sidebar-link" data-target="button19">The Squiggle</a>
+                <a href="#" class="sidebar-link" data-target="button20">East Field</a>
+                <a href="#" class="sidebar-link" data-target="button21">Oakes Lower Lawn</a>
+                <a href="#" class="sidebar-link" data-target="button22">College 9 Murals</a>
+                <a href="#" class="sidebar-link" data-target="button23">Campus Entrance</a>
             </div>
             <button class="dropdown-btn">FIND YOUR STUDY SPOT
             </button>
@@ -153,7 +153,7 @@
           <div id="buttons">
           <body>
             <button class="popupButton" data-target="slug1"><img src="icons/sammy2Asset 18.png" 
-              width="75px"
+              width="75px" id="button7" class="hidden-button"
             ></button>
             <div class="overlay"></div>
             <div class="popup" id="slug1">
@@ -173,6 +173,7 @@
             <button class="popupButton" data-target="deer1"><img src="icons/deerAsset 17.png"
             width="60px"
             height="70px"
+            id="button8" class="hidden-button"
             ></button>
             <div class="overlay"></div>
             <div class="popup" id="deer1">
@@ -192,6 +193,7 @@
                      <button class="popupButton" data-target="squirrel"><img src="icons/squirrelAsset 19.png"
                        width="60px"
                        height="70px"
+                       id="button11" class="hidden-button"
                      ></button>
             </div>
                      <div class="overlay"></div>
@@ -212,6 +214,7 @@
                        <button id= "porter-study" class="popupButton" data-target="porter"><img src="icons/closedbookAsset 1.png"
                          width="60px"
                          height="70px"
+                         id="button4" class="hidden-button"
                        ></button>
               </div>
                        <div class="overlay"></div>
@@ -231,6 +234,7 @@
                        <button id="se-library" class="popupButton" data-target="se"><img src="icons/laptopAsset 2.png"
                          width="60px"
                          height="70px"
+                         id="button2" class="hidden-button"
                        ></button>
                        <div class="overlay"></div>
                        <div class="popup" id="se">
@@ -248,6 +252,7 @@
                        <button id="stevenson-library" class="popupButton" data-target="stevensonlib"><img src="icons/laptopAsset 2.png"
                          width="60px"
                          height="70px"
+                         id="button3" class="hidden-button"
                        ></button>
                        <div class="overlay"></div>
                        <div class="popup" id="stevensonlib">
@@ -265,6 +270,7 @@
                        <button id="namaste-lounge" class="popupButton" data-target="namaste"><img src="icons/closedbookAsset 1.png"
                          width="60px"
                          height="70px"
+                         id="button5" class="hidden-button"
                        ></button>
                        <div class="overlay"></div>
                        <div class="popup" id="namaste">
@@ -282,6 +288,7 @@
                        <button id="tf-commons" class="popupButton" data-target="tfc"><img src="icons/closedbookAsset 1.png"
                          width="60px"
                          height="70px"
+                         id="button6" class="hidden-button"
                        ></button>
                        <div class="overlay"></div>
                        <div class="popup" id="tfc">
@@ -299,6 +306,7 @@
                        <button id="mchenry-library" class="popupButton" data-target="mchenry"><img src="icons/laptopAsset 2.png"
                          width="60px"
                          height="70px"
+                         id="button1" class="hidden-button"
                        ></button>
                        <div class="overlay"></div>
                        <div class="popup" id="mchenry">
@@ -317,6 +325,7 @@
                   <button class="popupButton" data-target="perk"><img src="icons/icedcoffeeAsset 4.png"
                     width="60px"
                     height="70px"
+                    id="button12" class="hidden-button"
                   ></button>
                   <div class="overlay"></div>
                   <div class="popup" id="perk">
@@ -336,6 +345,7 @@
                   <button class="popupButton" data-target="portermarket"><img src="icons/bagAsset 8.png"
                     width="60px"
                     height="70px"
+                    id="button13" class="hidden-button"
                   ></button>
                   <div class="overlay"></div>
                   <div class="popup" id="portermarket">
@@ -355,6 +365,7 @@
                   <button class="popupButton" data-target="merrillmarket"><img src="icons/bagAsset 8.png"
                     width="60px"
                     height="70px"
+                    id="button14" class="hidden-button"
                   ></button>
                   <div class="overlay"></div>
                   <div class="popup" id="merrillmarket">
@@ -375,6 +386,7 @@
                   <button class="popupButton" data-target="cowellcoffeeshop"><img src="icons/hotcoffeeAsset 8.png"
                     width="60px"
                     height="70px"
+                    id="button15" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>
@@ -396,6 +408,7 @@
                   <button class="popupButton" data-target="globalvillagecafe"><img src="icons/hotcoffeeAsset 8.png"
                     width="60px"
                     height="70px"
+                    id="button18" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>
@@ -415,6 +428,7 @@
                   <button class="popupButton" data-target="oakescaf"><img src="icons/burgerAsset 6.png"
                     width="60px"
                     height="70px"
+                    id="button16" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>
@@ -435,6 +449,7 @@
                   <button class="popupButton" data-target="stevensoncof"><img src="icons/sandwichAsset 7.png"
                     width="60px"
                     height="70px"
+                    id="button17" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>
@@ -456,6 +471,7 @@
                   <button class="popupButton" data-target="squiggle"><img src="icons/squiggleAsset 9.png"
                     width="60px"
                     height="70px"
+                    id="button19" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>
@@ -477,6 +493,7 @@
                   <button class="popupButton" data-target="eastfield"><img src="icons/sunsetAsset 14.png"
                     width="60px"
                     height="70px"
+                    id="button20" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>
@@ -498,6 +515,7 @@
                   <button class="popupButton" data-target="oakeslawn"><img src="icons/oceanAsset 10.png"
                     width="60px"
                     height="70px"
+                    id="button21" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>
@@ -519,6 +537,7 @@
                   <button class="popupButton" data-target="murals"><img src="icons/sprraycanAsset 12.png"
                     width="60px"
                     height="70px"
+                    id="button22" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>
@@ -540,6 +559,7 @@
                   <button class="popupButton" data-target="entrance"><img src="icons/signAsset 11.png"
                     width="60px"
                     height="70px"
+                    id="button23" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>
@@ -561,6 +581,7 @@
                   <button class="popupButton" data-target="turkey"><img src="icons/turkeyAsset 20.png"
                       width="60px"
                       height="70px"
+                      id="button10" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>
@@ -583,6 +604,7 @@
                   <button class="popupButton" data-target="koi"><img src="icons/koiAsset 15.png"
                       width="60px"
                       height="70px"
+                      id="button9" class="hidden-button"
                   ></button>
                   </div>
                   <div class="overlay"></div>

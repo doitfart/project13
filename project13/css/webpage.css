@@ -174,5 +174,7 @@
       display: inline-block;
     }
 
-
+    .hidden-button {
+      display: none;
+    }
     

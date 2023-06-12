@@ -29,6 +29,29 @@ function openNav() {
     });
   }
   
+  // Get all the link elements
+var links = document.querySelectorAll(".myLink");
+
+// Add event listeners to the links
+links.forEach(function(link) {
+  link.addEventListener("click", function(event) {
+    event.preventDefault();
+    var target = this.getAttribute("data-target");
+    
+    // Hide all button containers
+    var buttonContainers = document.querySelectorAll("[data-button-container]");
+    buttonContainers.forEach(function(container) {
+      container.classList.add("hidden");
+    });
+    
+    // Show the relevant button container
+    var targetContainer = document.getElementById(target);
+    if (targetContainer) {
+      targetContainer.classList.remove("hidden");
+    }
+  });
+});
+
 
 $(document).ready(function() {
   // Open the pop-up when the button is clicked
@@ -122,3 +145,24 @@ function reset() {
   return;
 }
 
+
+const sidebarLinks = document.getElementsByClassName('sidebar-link');
+const buttons = document.getElementsByClassName('hidden-button');
+let currentButton = null;
+
+Array.from(sidebarLinks).forEach(link => {
+  link.addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    const targetButtonId = link.getAttribute('data-target');
+    const targetButton = document.getElementById(targetButtonId);
+
+    if (currentButton !== targetButton) {
+      if (currentButton) {
+        currentButton.style.display = 'none';
+      }
+      targetButton.style.display = 'block';
+      currentButton = targetButton;
+    }
+  });
+});
