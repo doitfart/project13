@@ -178,6 +178,7 @@ body {
   display: inline-block;
 }
 
-#deer {
-  display: none;
-}
+    .hidden-button {
+      display: none;
+    }
+    
