@@ -170,15 +170,3 @@ Array.from(sidebarLinks).forEach(link => {
     }
   });
 });
-
-document.addEventListener('click', function(event) {
-  const targetElement = event.target;
-
-  // Check if the clicked element is outside the sidebar area
-  if (!targetElement.classList.contains('sidebar-link') && !targetElement.classList.contains('hidden-button')) {
-    if (currentButton) {
-      currentButton.style.display = 'none';
-      currentButton = null;
-    }
-  }
-});
