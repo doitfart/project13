@@ -180,4 +180,8 @@
     .hidden-button {
       display: none;
     }
-    
+
+    .popup.show-popup {
+      display: block;
+    }
+        
