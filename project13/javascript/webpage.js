@@ -70,6 +70,171 @@ $(document).ready(function() {
   });
 });
 
+/*
+function toggleStudySpots() {
+  document.getElementById("button1").style.display = 'block';
+  document.getElementById("button4").style.display = 'block';
+  document.getElementById("button2").style.display = 'block';
+  document.getElementById("button3").style.display = 'block';
+  document.getElementById("button5").style.display = 'block';
+  document.getElementById("button6").style.display = 'block';
+
+  document.getElementById("button7a").style.display = 'none';
+  document.getElementById("button7b").style.display = 'none';
+  document.getElementById("button7c").style.display = 'none';
+  document.getElementById("button8a").style.display = 'none';
+  document.getElementById("button8b").style.display = 'none';
+  document.getElementById("button9").style.display = 'none';
+  document.getElementById("button10").style.display = 'none';
+  document.getElementById("button11a").style.display = 'none';
+  document.getElementById("button11b").style.display = 'none';
+  document.getElementById("button11c").style.display = 'none';
+  document.getElementById("button12a").style.display = 'none';
+  document.getElementById("button12b").style.display = 'none';
+  document.getElementById("button12c").style.display = 'none';
+  document.getElementById("button12d").style.display = 'none';
+  document.getElementById("button13").style.display = 'none';
+  document.getElementById("button14").style.display = 'none';
+  document.getElementById("button15").style.display = 'none';
+  document.getElementById("button16").style.display = 'none';
+  document.getElementById("button17").style.display = 'none';
+  document.getElementById("button18").style.display = 'none';
+  document.getElementById("button19").style.display = 'none';
+  document.getElementById("button20").style.display = 'none';
+  document.getElementById("button21").style.display = 'none';
+  document.getElementById("button22").style.display = 'none';
+  document.getElementById("button23").style.display = 'none';
+  return;
+}
+
+function toggleAnimalSightings() {
+  document.getElementById("button7a").style.display = 'block';
+  document.getElementById("button7b").style.display = 'block';
+  document.getElementById("button7c").style.display = 'block';
+  document.getElementById("button8a").style.display = 'block';
+  document.getElementById("button8b").style.display = 'block';
+  document.getElementById("button9").style.display = 'block';
+  document.getElementById("button10").style.display = 'block';
+  document.getElementById("button11a").style.display = 'block';
+  document.getElementById("button11b").style.display = 'block';
+  document.getElementById("button11c").style.display = 'block';
+ 
+  document.getElementById("button1").style.display = 'none';
+  document.getElementById("button4").style.display = 'none';
+  document.getElementById("button2").style.display = 'none';
+  document.getElementById("button3").style.display = 'none';
+  document.getElementById("button5").style.display = 'none';
+  document.getElementById("button6").style.display = 'none';
+  document.getElementById("button12a").style.display = 'none';
+  document.getElementById("button12b").style.display = 'none';
+  document.getElementById("button12c").style.display = 'none';
+  document.getElementById("button12d").style.display = 'none';
+  document.getElementById("button13").style.display = 'none';
+  document.getElementById("button14").style.display = 'none';
+  document.getElementById("button15").style.display = 'none';
+  document.getElementById("button16").style.display = 'none';
+  document.getElementById("button17").style.display = 'none';
+  document.getElementById("button18").style.display = 'none';
+  document.getElementById("button19").style.display = 'none';
+  document.getElementById("button20").style.display = 'none';
+  document.getElementById("button21").style.display = 'none';
+  document.getElementById("button22").style.display = 'none';
+  document.getElementById("button23").style.display = 'none';
+  return;  
+}
+
+function toggleCafes() {
+  document.getElementById("button12a").style.display = 'block';
+  document.getElementById("button12b").style.display = 'block';
+  document.getElementById("button12c").style.display = 'block';
+  document.getElementById("button12d").style.display = 'block';
+  document.getElementById("button13").style.display = 'block';
+  document.getElementById("button14").style.display = 'block';
+  document.getElementById("button15").style.display = 'block';
+  document.getElementById("button16").style.display = 'block';
+  document.getElementById("button17").style.display = 'block';
+  document.getElementById("button18").style.display = 'block';
+ 
+  document.getElementById("button1").style.display = 'none';
+  document.getElementById("button4").style.display = 'none';
+  document.getElementById("button2").style.display = 'none';
+  document.getElementById("button3").style.display = 'none';
+  document.getElementById("button5").style.display = 'none';
+  document.getElementById("button6").style.display = 'none';
+  document.getElementById("button7a").style.display = 'none';
+  document.getElementById("button7b").style.display = 'none';
+  document.getElementById("button7c").style.display = 'none';
+  document.getElementById("button8a").style.display = 'none';
+  document.getElementById("button8b").style.display = 'none';
+  document.getElementById("button9").style.display = 'none';
+  document.getElementById("button10").style.display = 'none';
+  document.getElementById("button11a").style.display = 'none';
+  document.getElementById("button11b").style.display = 'none';
+  document.getElementById("button11c").style.display = 'none';
+  document.getElementById("button12a").style.display = 'none';
+  document.getElementById("button12b").style.display = 'none';
+  document.getElementById("button12c").style.display = 'none';
+  document.getElementById("button12d").style.display = 'none';
+  document.getElementById("button13").style.display = 'none';
+  document.getElementById("button14").style.display = 'none';
+  document.getElementById("button15").style.display = 'none';
+  document.getElementById("button16").style.display = 'none';
+  document.getElementById("button17").style.display = 'none';
+  document.getElementById("button18").style.display = 'none';
+  document.getElementById("button19").style.display = 'none';
+  document.getElementById("button20").style.display = 'none';
+  document.getElementById("button21").style.display = 'none';
+  document.getElementById("button22").style.display = 'none';
+  document.getElementById("button23").style.display = 'none';
+  return;
+}
+
+function togglePhotoOps() {
+  document.getElementById("button19").style.display = 'block';
+  document.getElementById("button20").style.display = 'block';
+  document.getElementById("button21").style.display = 'block';
+  document.getElementById("button22").style.display = 'block';
+  document.getElementById("button23").style.display = 'block';
+
+  document.getElementById("button1").style.display = 'none';
+  document.getElementById("button4").style.display = 'none';
+  document.getElementById("button2").style.display = 'none';
+  document.getElementById("button3").style.display = 'none';
+  document.getElementById("button5").style.display = 'none';
+  document.getElementById("button6").style.display = 'none';
+  document.getElementById("button7a").style.display = 'none';
+  document.getElementById("button7b").style.display = 'none';
+  document.getElementById("button7c").style.display = 'none';
+  document.getElementById("button8a").style.display = 'none';
+  document.getElementById("button8b").style.display = 'none';
+  document.getElementById("button9").style.display = 'none';
+  document.getElementById("button10").style.display = 'none';
+  document.getElementById("button11a").style.display = 'none';
+  document.getElementById("button11b").style.display = 'none';
+  document.getElementById("button11c").style.display = 'none';
+  document.getElementById("button12a").style.display = 'none';
+  document.getElementById("button12b").style.display = 'none';
+  document.getElementById("button12c").style.display = 'none';
+  document.getElementById("button12d").style.display = 'none';
+  document.getElementById("button13").style.display = 'none';
+  document.getElementById("button14").style.display = 'none';
+  document.getElementById("button15").style.display = 'none';
+  document.getElementById("button16").style.display = 'none';
+  document.getElementById("button17").style.display = 'none';
+  document.getElementById("button18").style.display = 'none';
+  document.getElementById("button12a").style.display = 'none';
+  document.getElementById("button12b").style.display = 'none';
+  document.getElementById("button12c").style.display = 'none';
+  document.getElementById("button12d").style.display = 'none';
+  document.getElementById("button13").style.display = 'none';
+  document.getElementById("button14").style.display = 'none';
+  document.getElementById("button15").style.display = 'none';
+  document.getElementById("button16").style.display = 'none';
+  document.getElementById("button17").style.display = 'none';
+  document.getElementById("button18").style.display = 'none';
+  return;
+} */
+
 
 function filter() {
   document.getElementById("button1").style.display = 'block';
@@ -82,10 +247,13 @@ function filter() {
   document.getElementById("button7a").style.display = 'none';
   document.getElementById("button7b").style.display = 'none';
   document.getElementById("button7c").style.display = 'none';
-  document.getElementById("button8").style.display = 'none';
+  document.getElementById("button8a").style.display = 'none';
+  document.getElementById("button8b").style.display = 'none';
   document.getElementById("button9").style.display = 'none';
   document.getElementById("button10").style.display = 'none';
-  document.getElementById("button11").style.display = 'none';
+  document.getElementById("button11a").style.display = 'none';
+  document.getElementById("button11b").style.display = 'none';
+  document.getElementById("button11c").style.display = 'none';
   document.getElementById("button12a").style.display = 'none';
   document.getElementById("button12b").style.display = 'none';
   document.getElementById("button12c").style.display = 'none';
@@ -146,6 +314,31 @@ function reset() {
   document.getElementById("button3").style.display = 'none';
   document.getElementById("button5").style.display = 'none';
   document.getElementById("button6").style.display = 'none';
+  document.getElementById("button7a").style.display = 'none';
+  document.getElementById("button7b").style.display = 'none';
+  document.getElementById("button7c").style.display = 'none';
+  document.getElementById("button8a").style.display = 'none';
+  document.getElementById("button8b").style.display = 'none';
+  document.getElementById("button9").style.display = 'none';
+  document.getElementById("button10").style.display = 'none';
+  document.getElementById("button11a").style.display = 'none';
+  document.getElementById("button11b").style.display = 'none';
+  document.getElementById("button11c").style.display = 'none';
+  document.getElementById("button12a").style.display = 'none';
+  document.getElementById("button12b").style.display = 'none';
+  document.getElementById("button12c").style.display = 'none';
+  document.getElementById("button12d").style.display = 'none';
+  document.getElementById("button13").style.display = 'none';
+  document.getElementById("button14").style.display = 'none';
+  document.getElementById("button15").style.display = 'none';
+  document.getElementById("button16").style.display = 'none';
+  document.getElementById("button17").style.display = 'none';
+  document.getElementById("button18").style.display = 'none';
+  document.getElementById("button19").style.display = 'none';
+  document.getElementById("button20").style.display = 'none';
+  document.getElementById("button21").style.display = 'none';
+  document.getElementById("button22").style.display = 'none';
+  document.getElementById("button23").style.display = 'none';
   return;
 }
 
