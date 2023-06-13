@@ -329,8 +329,8 @@ Array.from(sidebarLinks).forEach(link => {
     }
   });
 });
-<<<<<<< Updated upstream
   
+
 document.addEventListener('click', function(event) {
   const targetElement = event.target;
 
@@ -342,7 +342,7 @@ document.addEventListener('click', function(event) {
     }
   }
 });
-=======
+
 
 document.getElementById('MButton1').addEventListener('click', function(event) {
   event.preventDefault();
@@ -488,8 +488,3 @@ document.getElementById('MButton5').addEventListener('click', function(event) {
   utton10b.style.display = 'none';
     
 });
-
-
-
-
->>>>>>> Stashed changes
