@@ -8,42 +8,43 @@ function openNav() {
  
   var dropdown = document.getElementsByClassName("dropdown-btn");
   var activeDropdown = null;
-  
+ 
   for (var i = 0; i < dropdown.length; i++) {
     dropdown[i].addEventListener("click", function() {
       if (activeDropdown && activeDropdown !== this) {
         activeDropdown.classList.remove("active");
         activeDropdown.nextElementSibling.style.display = "none";
       }
-  
+ 
       this.classList.toggle("active");
       var dropdownContent = this.nextElementSibling;
-  
+ 
       if (dropdownContent.style.display === "block") {
         dropdownContent.style.display = "none";
       } else {
         dropdownContent.style.display = "block";
       }
-  
+ 
       activeDropdown = this;
     });
   }
-  
+ 
   // Get all the link elements
 var links = document.querySelectorAll(".myLink");
+
 
 // Add event listeners to the links
 links.forEach(function(link) {
   link.addEventListener("click", function(event) {
     event.preventDefault();
     var target = this.getAttribute("data-target");
-    
+   
     // Hide all button containers
     var buttonContainers = document.querySelectorAll("[data-button-container]");
     buttonContainers.forEach(function(container) {
       container.classList.add("hidden");
     });
-    
+   
     // Show the relevant button container
     var targetContainer = document.getElementById(target);
     if (targetContainer) {
@@ -61,6 +62,7 @@ $(document).ready(function() {
     $('.overlay').fadeIn();
   });
 
+
   // Close the pop-up when the close button is clicked
   $('.closeButton').click(function() {
     $('.overlay').fadeOut();
@@ -68,19 +70,37 @@ $(document).ready(function() {
   });
 });
 
+
 function filter() {
-  document.getElementById("mchenry-library").style.opacity = 1;
-  document.getElementById("mchenry-library").disabled = false;
-  document.getElementById("porter-study").style.opacity = 1;
-  document.getElementById("porter-study").disabled = false;
-  document.getElementById("se-library").style.opacity = 1;
-  document.getElementById("se-library").disabled = false;
-  document.getElementById("stevenson-library").style.opacity = 1;
-  document.getElementById("stevenson-library").disabled = false;
-  document.getElementById("namaste-lounge").style.opacity = 1;
-  document.getElementById("namaste-lounge").disabled = false;
-  document.getElementById("tf-commons").style.opacity = 1;
-  document.getElementById("tf-commons").disabled = false;
+  document.getElementById("button1").style.display = 'block';
+  document.getElementById("button4").style.display = 'block';
+  document.getElementById("button2").style.display = 'block';
+  document.getElementById("button3").style.display = 'block';
+  document.getElementById("button5").style.display = 'block';
+  document.getElementById("button6").style.display = 'block';
+
+  document.getElementById("button7a").style.display = 'none';
+  document.getElementById("button7b").style.display = 'none';
+  document.getElementById("button7c").style.display = 'none';
+  document.getElementById("button8").style.display = 'none';
+  document.getElementById("button9").style.display = 'none';
+  document.getElementById("button10").style.display = 'none';
+  document.getElementById("button11").style.display = 'none';
+  document.getElementById("button12a").style.display = 'none';
+  document.getElementById("button12b").style.display = 'none';
+  document.getElementById("button12c").style.display = 'none';
+  document.getElementById("button12d").style.display = 'none';
+  document.getElementById("button13").style.display = 'none';
+  document.getElementById("button14").style.display = 'none';
+  document.getElementById("button15").style.display = 'none';
+  document.getElementById("button16").style.display = 'none';
+  document.getElementById("button17").style.display = 'none';
+  document.getElementById("button18").style.display = 'none';
+  document.getElementById("button19").style.display = 'none';
+  document.getElementById("button20").style.display = 'none';
+  document.getElementById("button21").style.display = 'none';
+  document.getElementById("button22").style.display = 'none';
+  document.getElementById("button23").style.display = 'none';
  
   var lively = document.getElementById("lively");
   var moderate = document.getElementById("moderate");
@@ -91,37 +111,26 @@ function filter() {
   var outside = document.getElementById("outside");
   var both = document.getElementById("both");
 
+
   if (moderate.checked == true && yes.checked == true && both.checked == true) {
-    document.getElementById("porter-study").style.opacity = 0;
-    document.getElementById("porter-study").disabled = true;
-    document.getElementById("se-library").style.opacity = 0;
-    document.getElementById("se-library").disabled = true;
-    document.getElementById("stevenson-library").style.opacity = 0;
-    document.getElementById("stevenson-library").disabled = true;
+    document.getElementById("button4").style.display = 'none';
+    document.getElementById("button2").style.display = 'none';
+    document.getElementById("button3").style.display = 'none';
     return;
   }
   else if (quiet.checked == true && yes.checked == true && inside.checked == true) {
-    document.getElementById("mchenry-library").style.opacity = 0;
-    document.getElementById("mchenry-library").disabled = true;
-    document.getElementById("se-library").style.opacity = 0;
-    document.getElementById("se-library").disabled = true;
-    document.getElementById("namaste-lounge").style.opacity = 0;
-    document.getElementById("namaste-lounge").disabled = true;
-    document.getElementById("tf-commons").style.opacity = 0;
-    document.getElementById("tf-commons").disabled = true;
+    document.getElementById("button1").style.display = 'none';
+    document.getElementById("button2").style.display = 'none';
+    document.getElementById("button5").style.display = 'none';
+    document.getElementById("button6").style.display = 'none';
     return;
   }
   else if (lively.checked == true && yes.checked == true && inside.checked == true) {
-    document.getElementById("mchenry-library").style.opacity = 0;
-    document.getElementById("mchenry-library").disabled = true;
-    document.getElementById("porter-study").style.opacity = 0;
-    document.getElementById("porter-study").disabled = true;
-    document.getElementById("stevenson-library").style.opacity = 0;
-    document.getElementById("stevenson-library").disabled = true;
-    document.getElementById("namaste-lounge").style.opacity = 0;
-    document.getElementById("namaste-lounge").disabled = true;
-    document.getElementById("tf-commons").style.opacity = 0;
-    document.getElementById("tf-commons").disabled = true;
+    document.getElementById("button1").style.display = 'none';
+    document.getElementById("button4").style.display = 'none';
+    document.getElementById("button3").style.display = 'none';
+    document.getElementById("button5").style.display = 'none';
+    document.getElementById("button6").style.display = 'none';
     return;
   }
   else {
@@ -129,19 +138,14 @@ function filter() {
   }
 }
 
+
 function reset() {
-  document.getElementById("mchenry-library").style.opacity = 1;
-  document.getElementById("mchenry-library").disabled = false;
-  document.getElementById("porter-study").style.opacity = 1;
-  document.getElementById("porter-study").disabled = false;
-  document.getElementById("se-library").style.opacity = 1;
-  document.getElementById("se-library").disabled = false;
-  document.getElementById("stevenson-library").style.opacity = 1;
-  document.getElementById("stevenson-library").disabled = false;
-  document.getElementById("namaste-lounge").style.opacity = 1;
-  document.getElementById("namaste-lounge").disabled = false;
-  document.getElementById("tf-commons").style.opacity = 1;
-  document.getElementById("tf-commons").disabled = false;
+  document.getElementById("button1").style.display = 'none';
+  document.getElementById("button4").style.display = 'none';
+  document.getElementById("button2").style.display = 'none';
+  document.getElementById("button3").style.display = 'none';
+  document.getElementById("button5").style.display = 'none';
+  document.getElementById("button6").style.display = 'none';
   return;
 }
 
@@ -170,3 +174,4 @@ Array.from(sidebarLinks).forEach(link => {
     }
   });
 });
+  
