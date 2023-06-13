@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-  
-    
-	<head>
-		<title>Points of Interest</title>
+ 
+   
+  <head>
+    <title>Points of Interest</title>
 
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="css/webpage.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/webpage.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Sans|Sofia+Sans+Extra+Condensed">
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script type="text/javascript" src="./javascript/webpage.js" DEFER></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./javascript/webpage.js" DEFER></script>
    
    <style>
       /* Update the button style to make it transparent */
@@ -21,70 +21,74 @@
           outline: none;
       }
   </style>
- 
 
-	</head>
 
-	<body>
+  </head>
+
+  <body>
     <div class="image-container">
       <img src="pictures/projectmapv3.png" alt="Background Image" class="background-image" display="block">
       <div class="content">
 
-		    <div id="mySidebar" class="sidebar">
+        <div id="mySidebar" class="sidebar">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="closebtn">&times;</a>
             <button class="dropdown-btn">ABOUT
                 <i class="fa fa-caret-down"></i>
               </button>
             <div class="dropdown-container">
-                <a href="#" >The Project</a>
-                <a href="#">The Authors</a>
+              <a href="#" >The Project</a>
+              <a href="#">The Authors</a>
             </div>
           <button class="dropdown-btn">STUDY SPOTS <img src="icons/openbookAsset 3.png" width="35px">
-                <i class="fa fa-caret-down"></i>
-              </button>
+            <i class="fa fa-caret-down"></i>
+          </button>
             <div class="dropdown-container">
-                <a href="#" class="sidebar-link" data-target="button1">Mchenry Library</a>
-                <a href="#" class="sidebar-link" data-target="button2">S & E Library</a>
-                <a href="#" class="sidebar-link" data-target="button3">Stevenson Library</a>
-                <a href="#" class="sidebar-link" data-target="button4">Porter Study Room</a>
-                <a href="#" class="sidebar-link" data-target="button5">Namaste Lounge</a>
-                <a href="#" class="sidebar-link" data-target="button6">Terry Freitas Commons</a>
+              <!--<button id="button" onclick="toggleStudySpots()">+ Show All</button>-->
+              <a href="#" class="sidebar-link" data-target="button1">McHenry Library</a>
+              <a href="#" class="sidebar-link" data-target="button2">S & E Library</a>
+              <a href="#" class="sidebar-link" data-target="button3">Stevenson Library</a>
+              <a href="#" class="sidebar-link" data-target="button4">Porter Study Room</a>
+              <a href="#" class="sidebar-link" data-target="button5">Namaste Lounge</a>
+              <a href="#" class="sidebar-link" data-target="button6">Terry Freitas Commons</a>
             </div>
-            <button class="dropdown-btn">ANIMAL SIGHTINGS<img src="icons/sammy2Asset 18.png" width="35px">
-                <i class="fa fa-caret-down"></i>
-              </button>
+          <button class="dropdown-btn">ANIMAL SIGHTINGS<img src="icons/sammy2Asset 18.png" width="35px">
+              <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-container">
-                <a href="#" class="sidebar-link" data-target="button7a" data-target="button7b" data-target="button7c">Banana Slugs</a>
-                <a href="#" class="sidebar-link" data-target="button8">Deer</a>
-                <a href="#" class="sidebar-link" data-target="button9">Koi Fish</a>
-                <a href="#" class="sidebar-link" data-target="button10">Turkeys</a>
-                <a href="#" class="sidebar-link" data-target="button11">Squirrels</a>
-            </div>
-            <button class="dropdown-btn">CAFES <img src="icons/hotcoffeeAsset 5.png" width="30px">
-                <i class="fa fa-caret-down"></i>
-              </button>
+              <!--<button id="button" onclick="toggleAnimalSightings()">+ Show All</button>-->
+              <a href="#" class="sidebar-link" data-target="button7a" >Banana Slugs</a>
+              <a href="#" class="sidebar-link" data-target="button8a">Deer</a>
+              <a href="#" class="sidebar-link" data-target="button9">Koi Fish</a>
+              <a href="#" class="sidebar-link" data-target="button10a">Turkeys</a>
+              <a href="#" class="sidebar-link" data-target="button11a">Squirrels</a>
+          </div>
+          <button class="dropdown-btn">CAFES <img src="icons/hotcoffeeAsset 5.png" width="30px">
+              <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-container">
-              <a href="#" class="sidebar-link" data-target="button12a" data-target="button12b" data-target="button12c" data-target="button12d">Perk Coffee Bars</a>
+              <!--<button id="button" onclick="toggleCafes()">+ Show All</button>-->
+              <a href="#" class="sidebar-link" data-target="button12a">Perk Coffee Bars</a>
               <a href="#" class="sidebar-link" data-target="button13">Porter Market</a>
               <a href="#" class="sidebar-link" data-target="button14">Merrill Market</a>
               <a href="#" class="sidebar-link" data-target="button15">Cowell Coffee Shop</a>
               <a href="#" class="sidebar-link" data-target="button16">Oakes Cafe</a>
               <a href="#" class="sidebar-link" data-target="button17">Stevenson Coffee House</a>
               <a href="#" class="sidebar-link" data-target="button18">Global Village Cafe</a>
-          </div>
-            <button class="dropdown-btn" onclick="togglePhotoOps()">PHOTO-OPS<img src="icons/cameraAsset 13.png" width="30px">
-                <i class="fa fa-caret-down"></i>
-              </button>
+            </div>
+          <button class="dropdown-btn">PHOTO-OPS<img src="icons/cameraAsset 13.png" width="30px">
+              <i class="fa fa-caret-down"></i>
+            </button>
             <div class="dropdown-container">
-                <a href="#" class="sidebar-link" data-target="button19">The Squiggle</a>
-                <a href="#" class="sidebar-link" data-target="button20">East Field</a>
-                <a href="#" class="sidebar-link" data-target="button21">Oakes Lower Lawn</a>
-                <a href="#" class="sidebar-link" data-target="button22">College 9 Murals</a>
-                <a href="#" class="sidebar-link" data-target="button23">Campus Entrance</a>
+              <!--<button id="button" onclick="togglePhotoOps()">+ Show All</button>-->
+              <a href="#" class="sidebar-link" data-target="button19">The Squiggle</a>
+              <a href="#" class="sidebar-link" data-target="button20">East Field</a>
+              <a href="#" class="sidebar-link" data-target="button21">Oakes Lower Lawn</a>
+              <a href="#" class="sidebar-link" data-target="button22">College 9 Murals</a>
+              <a href="#" class="sidebar-link" data-target="button23">Campus Entrance</a>
             </div>
 
-            <button class="dropdown-btn">FIND YOUR STUDY SPOT
-            </button>
+          <button class="dropdown-btn">FIND YOUR STUDY SPOT
+          </button>
           <div class="dropdown-container">
             <div class="filter">
               <p id="noise">Noise Level</p>
@@ -111,7 +115,7 @@
              
               <button id="button" onclick="filter()">Submit</button>
               <button id="button" onclick="reset()">   Reset</button>
-            
+           
             </div>
           </div>
 
@@ -147,15 +151,15 @@
               box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
               z-index: 10000;
             }
-            
+           
           </style>
         <html>
           <div id="buttons">
-<!--Slugs-->     
-          
+<!--Slugs-->    
+         
             <body>
-              <div style= "position: absolute; top: 275%; left: 75%;">
-            <button class="popupButton" data-target="slug1"><img src="icons/sammy2Asset 18.png" 
+              <div style= "position: absolute; top: 275%; left: 60%;">
+            <button class="popupButton" data-target="slug1"><img src="icons/sammy2Asset 18.png"
               width="75px" id="button7a" class="hidden-button"
             ></button>
             <div class="overlay"></div>
@@ -171,9 +175,10 @@
             </div>
           </body>
 
+
           <body>
             <div style= "position: absolute; top: 200%; left: 75%;">
-            <button class="popupButton" data-target="slug2"><img src="icons/sammy2Asset 18.png" 
+            <button class="popupButton" data-target="slug2"><img src="icons/sammy2Asset 18.png"
               width="75px" id="button7b" class="hidden-button"
             ></button>
             <div class="overlay"></div>
@@ -190,8 +195,8 @@
           </body>
 
           <body>
-
-            <button class="popupButton" data-target="slug3"><img src="icons/sammy2Asset 18.png" 
+            <div style= "position: absolute; top: 150%; left: 75%;">
+            <button class="popupButton" data-target="slug3"><img src="icons/sammy2Asset 18.png"
               width="75px" id="button7c" class="hidden-button"
             ></button>
             <div class="overlay"></div>
@@ -213,7 +218,7 @@
             <button class="popupButton" data-target="deer1"><img src="icons/deerAsset 17.png"
             width="60px"
             height="70px"
-            id="button8" class="hidden-button"
+            id="button8a" class="hidden-button"
             ></button>
             <div class="overlay"></div>
             <div class="popup" id="deer1">
@@ -228,21 +233,37 @@
             </div>
           </body>
 
-
-
-
+          <body>
+            <div style= "position: absolute; top: 275%; left: 75%;">
+            <button class="popupButton" data-target="deer2"><img src="icons/deerAsset 17.png"
+            width="60px"
+            height="70px"
+            id="button8b" class="hidden-button"
+            ></button>
+            <div class="overlay"></div>
+            <div class="popup" id="deer2">
+              <h2>Deer</h2>
+              <p>Deers love our campus! You'll be sure to find a family of deer here during your days on campus. </p>
+              <img src="pictures/deerporter.jpg" width="200px">
+              <br>
+              <a href="https://earth.google.com/web/search/Porter+College,+High+Street,+Santa+Cruz,+CA/@36.9943377,-122.0652388,219.1661936a,823.49020812d,35y,0h,45t,0r/data=CpYBGmwSZgolMHg4MDhlNDE5ZWVkMDZhNzlkOjB4NWY4MTcwNjAwZWJmMWJlORkFVy91Rn9CQCGJG1zfLIRewCorUG9ydGVyIENvbGxlZ2UsIEhpZ2ggU3RyZWV0LCBTYW50YSBDcnV6LCBDQRgCIAEiJgokCVA_1lTDgEJAETWygOhkfkJAGb4dyYZ3g17AISaElI3GhF7AKAI" target="_blank">Google Earth</a>
+              <br>
+              <br>
+              <button class="closeButton">Back</button>
+            </div>
+          </body>
 
  <!--Squirrels-->
           <body>
             <div style= "position:absolute; top: 10%; left: 60%;">
-                     <button class="popupButton" data-target="squirrel"><img src="icons/squirrelAsset 19.png"
+                     <button class="popupButton" data-target="squirrel1"><img src="icons/squirrelAsset 19.png"
                        width="60px"
                        height="70px"
-                       id="button11" class="hidden-button"
+                       id="button11a" class="hidden-button"
                      ></button>
             </div>
                      <div class="overlay"></div>
-                     <div class="popup" id="squirrel">
+                     <div class="popup" id="squirrel1">
                        <h2>Squirrels</h2>
                        <p>Squirrels are absolutely everywhere! You'll see at least 5 on your walk to class.</p>
                        <img src="pictures/squirellaying.jpeg" width="300px">
@@ -253,6 +274,48 @@
                        <button class="closeButton">Back</button>
                      </div>
             </body>
+
+            <body>
+              <div style= "position:absolute; top: 10%; left: 60%;">
+                       <button class="popupButton" data-target="squirrel2"><img src="icons/squirrelAsset 19.png"
+                         width="60px"
+                         height="70px"
+                         id="button11b" class="hidden-button"
+                       ></button>
+              </div>
+                       <div class="overlay"></div>
+                       <div class="popup" id="squirrel2">
+                         <h2>Squirrels</h2>
+                         <p>Squirrels are absolutely everywhere! You'll see at least 5 on your walk to class.</p>
+                         <img src="pictures/squirellaying.jpeg" width="300px">
+                         <br>
+                         <a href="https://earth.google.com/web/search/College+10/@37.0006634,-122.0585269,261.40156236a,823.41498573d,35y,0h,45t,0r/data=CnUaSxJFCiUweDgwOGU0MTBhZmVmYjU3Yzk6MHhmYmNiOGM0NjdjOGVhY2Q3Ge-mAL0VgEJAIetbnOe-g17AKgpDb2xsZWdlIDEwGAIgASImCiQJPvm_axiBQkAREjXBXqV-QkAZHjgse3GDXsAhs9RG7peEXsAoAg" target="_blank">Google Earth</a>
+                         <br>
+                         <br>
+                         <button class="closeButton">Back</button>
+                       </div>
+              </body>
+
+              <body>
+                <div style= "position:absolute; top: 10%; left: 60%;">
+                         <button class="popupButton" data-target="squirrel3"><img src="icons/squirrelAsset 19.png"
+                           width="60px"
+                           height="70px"
+                           id="button11c" class="hidden-button"
+                         ></button>
+                </div>
+                         <div class="overlay"></div>
+                         <div class="popup" id="squirrel3">
+                           <h2>Squirrels</h2>
+                           <p>Squirrels are absolutely everywhere! You'll see at least 5 on your walk to class.</p>
+                           <img src="pictures/squirellaying.jpeg" width="300px">
+                           <br>
+                           <a href="https://earth.google.com/web/search/College+10/@37.0006634,-122.0585269,261.40156236a,823.41498573d,35y,0h,45t,0r/data=CnUaSxJFCiUweDgwOGU0MTBhZmVmYjU3Yzk6MHhmYmNiOGM0NjdjOGVhY2Q3Ge-mAL0VgEJAIetbnOe-g17AKgpDb2xsZWdlIDEwGAIgASImCiQJPvm_axiBQkAREjXBXqV-QkAZHjgse3GDXsAhs9RG7peEXsAoAg" target="_blank">Google Earth</a>
+                           <br>
+                           <br>
+                           <button class="closeButton">Back</button>
+                         </div>
+                </body>
   <!--Turkeys-->
          
             <body>
@@ -260,7 +323,7 @@
               <button class="popupButton" data-target="turkey"><img src="icons/turkeyAsset 20.png"
                   width="60px"
                   height="70px"
-                  id="button10" class="hidden-button"
+                  id="button10a" class="hidden-button"
               ></button>
               </div>
               <div class="overlay"></div>
@@ -269,13 +332,36 @@
                   <p>Turkeys are common all year round here! Don’t get too close or they  might gobble at you!</p>
                   <img src="pictures/turkeyoakes.jpg" width="300px">
                   <br>
-                
+               
                 <a href="https://earth.google.com/web/search/Oakes+College,+Oakes+Road,+Santa+Cruz,+CA/@36.9894756,-122.0628583,185.129443a,823.54801931d,35y,0h,45t,0r/data=CpQBGmoSZAolMHg4MDhlNDE5OWI4ODdmZTZiOjB4NjA0YjI2MTI4YTYwNTUyMxlRGO8ip35CQCEOstHeBYRewCopT2FrZXMgQ29sbGVnZSwgT2FrZXMgUm9hZCwgU2FudGEgQ3J1eiwgQ0EYAiABIiYKJAkBqlyOh4BCQBGU8QEzwn5CQBlFr2uRZ4NewCFHyOnrYIRewCgC" target="_blank">Google Earth</a>
                   <br>
                   <br>
                   <button class="closeButton">Back</button>
                 </div>
             </body>
+
+            <body>
+              <div style= "position:absolute; top: 10%; left: 10%;">
+              <button class="popupButton" data-target="turkey"><img src="icons/turkeyAsset 20.png"
+                  width="60px"
+                  height="70px"
+                  id="button10b" class="hidden-button"
+              ></button>
+              </div>
+              <div class="overlay"></div>
+              <div class="popup" id="turkey">
+                  <h2>Turkeys</h2>
+                  <p>Turkeys are common all year round here! Don’t get too close or they  might gobble at you!</p>
+                  <img src="pictures/turkeyoakes.jpg" width="300px">
+                  <br>
+               
+                <a href="https://earth.google.com/web/search/Oakes+College,+Oakes+Road,+Santa+Cruz,+CA/@36.9894756,-122.0628583,185.129443a,823.54801931d,35y,0h,45t,0r/data=CpQBGmoSZAolMHg4MDhlNDE5OWI4ODdmZTZiOjB4NjA0YjI2MTI4YTYwNTUyMxlRGO8ip35CQCEOstHeBYRewCopT2FrZXMgQ29sbGVnZSwgT2FrZXMgUm9hZCwgU2FudGEgQ3J1eiwgQ0EYAiABIiYKJAkBqlyOh4BCQBGU8QEzwn5CQBlFr2uRZ4NewCFHyOnrYIRewCgC" target="_blank">Google Earth</a>
+                  <br>
+                  <br>
+                  <button class="closeButton">Back</button>
+                </div>
+            </body>
+
 
             <body>
               <div style= "position:absolute; top: 10%; left: 10%;">
@@ -297,6 +383,7 @@
                   <button class="closeButton">Back</button>
               </div>
             </body>
+
 
             <body>
               <div style= >
@@ -432,7 +519,7 @@
                     <button class="closeButton">Back</button>
                   </div>
                 </body>
-                
+               
                 <body>
                   <div style= "position:absolute; top: 60%; left: 80%;">
                   <button class="popupButton" data-target="perk2"><img src="icons/icedcoffeeAsset 4.png"
@@ -452,15 +539,15 @@
                     <button class="closeButton">Back</button>
                   </div>
                 </body>
-                
+               
                 <body>
-                  <button class="popupButton" data-target="perk"><img src="icons/icedcoffeeAsset 4.png"
+                  <button class="popupButton" data-target="perk3"><img src="icons/icedcoffeeAsset 4.png"
                     width="50px"
                     height="80px"
                     id="button12c" class="hidden-button"
                   ></button>
                   <div class="overlay"></div>
-                  <div class="popup" id="perk">
+                  <div class="popup" id="perk3">
                     <h2>Perk Coffee Bars</h2>
                     <p>There are 4 Perk coffee bars! Baskin Engineering, Physical Sciences, Earth and Marine Sciences, and the 9/10 dining hall all have one of these coffee bars. These cafés are super convenient to grab a quick snack and a drink on the go. They all have baked goods, bottled drinks, and plenty of hot and cold drinks to enjoy.</p>
                     <img src="pictures/perkeng.jpg" width="300px">
@@ -472,14 +559,15 @@
                   </div>
                 </body>
 
+
                 <body>
-                  <button class="popupButton" data-target="perk"><img src="icons/icedcoffeeAsset 4.png"
+                  <button class="popupButton" data-target="perk4"><img src="icons/icedcoffeeAsset 4.png"
                     width="50px"
                     height="80px"
                     id="button12d" class="hidden-button"
                   ></button>
                   <div class="overlay"></div>
-                  <div class="popup" id="perk">
+                  <div class="popup" id="perk4">
                     <h2>Perk Coffee Bars</h2>
                     <p>There are 4 Perk coffee bars! Baskin Engineering, Physical Sciences, Earth and Marine Sciences, and the 9/10 dining hall all have one of these coffee bars. These cafés are super convenient to grab a quick snack and a drink on the go. They all have baked goods, bottled drinks, and plenty of hot and cold drinks to enjoy.</p>
                     <img src="pictures/perkeng.jpg" width="300px">
@@ -490,6 +578,7 @@
                     <button class="closeButton">Back</button>
                   </div>
                 </body>
+
 
                 <body>
                   <div style= "position:absolute; top: -100%; left: -25%;">
@@ -510,7 +599,7 @@
                     <button class="closeButton">Back</button>
                   </div>
                 </body>
-                
+               
                 <body>
                   <div style= "position:absolute; top: -100%; left: -25%;">
                   <button class="popupButton" data-target="merrillmarket"><img src="icons/bagAsset 8.png"
@@ -530,6 +619,8 @@
                     <button class="closeButton">Back</button>
                   </div>
                 </body>
+
+
 
 
                 <body>
@@ -595,7 +686,7 @@
                     <button class="closeButton">Back</button>
                   </div>
                 </body>
-              
+             
                 <body>
                   <div style= "position:absolute; top: 10%; left: 10%;">
                   <button class="popupButton" data-target="stevensoncof"><img src="icons/sandwichAsset 7.png"
@@ -617,9 +708,9 @@
                   </div>
                 </body>
 
-                
+    
                 <body>
-                  <div style= "position:relative; top: 30%; left: -420%;">
+                  <div style= "position:relative; top: 30%; left: -300%;">
                   <button class="popupButton" data-target="squiggle" onclick="togglePopup('squiggle')"><img src="icons/squiggleAsset 9.png"
                     width="130px"
                     height="60px"
@@ -641,7 +732,7 @@
 
 
                 <body>
-                  <div style= "position:relative; top: 10%; left: -80%;">
+                  <div style= "position: absolute; top: 10px; left: 130px;">
                   <button class="popupButton" data-target="eastfield"><img src="icons/sunsetAsset 14.png"
                     width="80px"
                     height="70px"
@@ -663,7 +754,7 @@
 
 
                 <body>
-                  <div style= "position:absolute; top: 10%; left: 10%;">
+                  <div style= "position:absolute; top:90px; left: -200px;">
                   <button class="popupButton" data-target="oakeslawn"><img src="icons/oceanAsset 10.png"
                     width="90px"
                     height="60px"
@@ -685,7 +776,7 @@
 
 
                 <body>
-                  <div style= "position:absolute; top: 10%; left: 10%;">
+                  <div style= "position:absolute; top: -400px; left: -40px; ">
                   <button class="popupButton" data-target="murals"><img src="icons/spraycanAsset 12.png"
                     width="60px"
                     height="70px"
@@ -707,7 +798,7 @@
 
 
                 <body>
-                  <div style= "position:absolute; top: 10%; left: 10%;">
+                  <div style= "position:absolute; top: 300px; left: -100px;">
                   <button class="popupButton" data-target="entrance"><img src="icons/signAsset 11.png"
                     width="120px"
                     height="50px"
@@ -726,7 +817,7 @@
                     <button class="closeButton">Back</button>
                   </div>
                 </body>
-          
+         
 
 
               </div>
@@ -735,92 +826,4 @@
   </body>
 
 
-</html>
-<head>
-  <title>Geolocation Popup with Map</title>
-  <style>
-    .popup {
-      display: none;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 400px;
-      padding: 20px;
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      z-index: 9999;
-    }
-    
-    #map {
-      height: 300px;
-      margin-bottom: 10px;
-    }
-  </style>
-</head>
-<body>
-  <button onclick="showPopup()">Lost on Campus? Click Here!</button>
-  
-  <div id="locationPopup" class="popup">
-    <h2>Your Location</h2>
-    <div id="map"></div>
-    <p id="locationText">Fetching location...</p>
-    <button onclick="hidePopup()">Close</button>
-  </div>
-  
-  <script>
-    var map;
-    
-    function showPopup() {
-      var popup = document.getElementById('locationPopup');
-      popup.style.display = 'block';
-      fetchLocation();
-    }
-    
-    function hidePopup() {
-      var popup = document.getElementById('locationPopup');
-      popup.style.display = 'none';
-    }
-    
-    function fetchLocation() {
-      if ("geolocation" in navigator) {
-        navigator.geolocation.getCurrentPosition(function(position) {
-          var latitude = position.coords.latitude;
-          var longitude = position.coords.longitude;
-          
-          var locationText = document.getElementById('locationText');
-          locationText.innerHTML = 'Latitude: ' + latitude + '<br>Longitude: ' + longitude;
-          
-          showMap(latitude, longitude);
-        }, function(error) {
-          var locationText = document.getElementById('locationText');
-          locationText.innerHTML = 'Error fetching location: ' + error.message;
-        });
-      } else {
-        var locationText = document.getElementById('locationText');
-        locationText.innerHTML = 'Geolocation is not supported by your browser.';
-      }
-    }
-    
-    function showMap(latitude, longitude) {
-      var mapContainer = document.getElementById('map');
-      mapContainer.innerHTML = ''; // Clear the map container before re-rendering
-      
-      map = new google.maps.Map(mapContainer, {
-        center: { lat: latitude, lng: longitude },
-        zoom: 15
-      });
-      
-      var marker = new google.maps.Marker({
-        position: { lat: latitude, lng: longitude },
-        map: map
-      });
-    }
-  </script>
-  
-  <!-- Load the Google Maps JavaScript API -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJKoJApQMmEQkbC_-ZJ_5uIWQEzP-jLP8&callback=initMap" async defer></script>
-</body>
 </html>
