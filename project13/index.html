@@ -445,11 +445,13 @@
                        </div>
                      </body>
          <body>
+                       <div style= "position:absolute; top: -320px; left: -50px;">
                        <button id="namaste-lounge" class="popupButton" data-target="namaste"><img src="icons/closedbookAsset 1.png"
                          width="60px"
                          height="70px"
                          id="button5" class="hidden-button"
                        ></button>
+                      </div>
                        <div class="overlay"></div>
                        <div class="popup" id="namaste">
                          <h2>Namaste Lounge</h2>
@@ -463,11 +465,13 @@
                        </div>
                      </body>
          <body>
+                       <div style= "position:absolute; top: -300px; left: -80px;">
                        <button id="tf-commons" class="popupButton" data-target="tfc"><img src="icons/closedbookAsset 1.png"
                          width="60px"
                          height="70px"
                          id="button6" class="hidden-button"
                        ></button>
+                       </div>
                        <div class="overlay"></div>
                        <div class="popup" id="tfc">
                          <h2>Terry Freitas Commons</h2>
@@ -481,11 +485,13 @@
                        </div>
                      </body>
              <body>
+                       <div style= "position:absolute; top: -90px; left: -120px;">
                        <button id="mchenry-library" class="popupButton" data-target="mchenry"><img src="icons/laptopAsset 2.png"
                          width="60px"
                          height="70px"
                          id="button1" class="hidden-button"
                        ></button>
+                       </div>
                        <div class="overlay"></div>
                        <div class="popup" id="mchenry">
                          <h2>Mchenry Library</h2>
@@ -830,6 +836,129 @@
 
 
 </html>
+
+
+<html>
+<head>
+  <title>Geolocation Popup with Map</title>
+  <style>
+    .popup {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 9999;
+    }
+   
+    #map {
+      height: 300px;
+      margin-bottom: 10px;
+    }
+
+
+    #mapbutton {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="mapbutton">
+    <div style= "background-color: white;
+    border: solid;
+    cursor: pointer;
+    outline: black;
+    ">
+    <button onclick="showPopup()">Lost on Campus? Click Here!</button>
+    </div>
+  </div>
+  <div id="locationPopup" class="popup">
+    <h2>Your Location</h2>
+    <div id="map"></div>
+    <p id="locationText">Fetching location...</p>
+    <button onclick="hidePopup()">Close</button>
+  </div>
+ 
+  <script>
+    var map;
+   
+    function showPopup() {
+      var popup = document.getElementById('locationPopup');
+      popup.style.display = 'block';
+      fetchLocation();
+    }
+   
+    function hidePopup() {
+      var popup = document.getElementById('locationPopup');
+      popup.style.display = 'none';
+    }
+   
+    function fetchLocation() {
+      if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var latitude = position.coords.latitude;
+          var longitude = position.coords.longitude;
+         
+          var locationText = document.getElementById('locationText');
+          locationText.innerHTML = 'Latitude: ' + latitude + '<br>Longitude: ' + longitude;
+         
+          showMap(latitude, longitude);
+        }, function(error) {
+          var locationText = document.getElementById('locationText');
+          locationText.innerHTML = 'Error fetching location: ' + error.message;
+        });
+      } else {
+        var locationText = document.getElementById('locationText');
+        locationText.innerHTML = 'Geolocation is not supported by your browser.';
+      }
+    }
+   
+    function showMap(latitude, longitude) {
+      var mapContainer = document.getElementById('map');
+      mapContainer.innerHTML = ''; // Clear the map container before re-rendering
+     
+      map = new google.maps.Map(mapContainer, {
+        center: { lat: latitude, lng: longitude },
+        zoom: 15
+      });
+     
+      var marker = new google.maps.Marker({
+        position: { lat: latitude, lng: longitude },
+        map: map
+      });
+    }
+  </script>
+ 
+  <!-- Load the Google Maps JavaScript API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJKoJApQMmEQkbC_-ZJ_5uIWQEzP-jLP8&callback=initMap" async defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
