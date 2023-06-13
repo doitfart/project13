@@ -305,16 +305,31 @@ Array.from(sidebarLinks).forEach(link => {
     if (currentButton !== targetButton) {
       if (currentButton) {
         currentButton.style.display = 'none';
+        button7a.style.display = 'none';
+        button7b.style.display = 'none';
+        button7c.style.display = 'none';
+        button8a.style.display = 'none';
+        button8b.style.display = 'none';
+        button11a.style.display = 'none';
+        button11b.style.display = 'none';
+        button11c.style.display = 'none';
+        button10a.style.display = 'none';
+        button10b.style.display = 'none';
+        button12a.style.display = 'none';
+        button12b.style.display = 'none';
+        button12c.style.display = 'none';
+        button12d.style.display = 'none';
       }
       targetButton.style.display = 'block';
       currentButton = targetButton;
      } else {
-      // If the same button is clicked again, hide it
+      
       targetButton.style.display = 'none';
       currentButton = null;
     }
   });
 });
+<<<<<<< Updated upstream
   
 document.addEventListener('click', function(event) {
   const targetElement = event.target;
@@ -327,3 +342,154 @@ document.addEventListener('click', function(event) {
     }
   }
 });
+=======
+
+document.getElementById('MButton1').addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var button7a = document.getElementById('button7a');
+  var button7b = document.getElementById('button7b');
+  var button7c = document.getElementById('button7c');
+
+  if (button7a.style.display === 'block' && button7b.style.display === 'block' && button7c.style.display === 'block') {
+    button7a.style.display = 'none';
+    button7b.style.display = 'none';
+    button7c.style.display = 'none';
+  } else {
+    button7a.style.display = 'block';
+    button7b.style.display = 'block';
+    button7c.style.display = 'block';
+  }
+  button8a.style.display = 'none';
+  button8b.style.display = 'none';
+  button11a.style.display = 'none';
+  button11b.style.display = 'none';
+  button11c.style.display = 'none';
+  button10a.style.display = 'none';
+  button10b.style.display = 'none';
+  button12a.style.display = 'none';
+  button12b.style.display = 'none';
+  button12c.style.display = 'none';
+  button12d.style.display = 'none';
+});
+
+
+document.getElementById('MButton2').addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var button8a = document.getElementById('button8a');
+  var button8b = document.getElementById('button8b');
+
+  if (button8a.style.display === 'block' && button8b.style.display === 'block') {
+    button8a.style.display = 'none';
+    button8b.style.display = 'none';
+  } else {
+    button8a.style.display = 'block';
+    button8b.style.display = 'block';
+  }
+  button7a.style.display = 'none';
+  button7b.style.display = 'none';
+  button7c.style.display = 'none';
+  button11a.style.display = 'none';
+  button11b.style.display = 'none';
+  button11c.style.display = 'none';
+  button10a.style.display = 'none';
+  button10b.style.display = 'none';
+  button12a.style.display = 'none';
+  button12b.style.display = 'none';
+  button12c.style.display = 'none';
+  button12d.style.display = 'none';
+});
+
+document.getElementById('MButton4').addEventListener('click', function(event) {
+  event.preventDefault(); 
+  var button11a = document.getElementById('button11a');
+  var button11b = document.getElementById('button11b');
+  var button11c = document.getElementById('button11c');
+
+  if (button11a.style.display === 'block' && button11b.style.display === 'block' && button11c.style.display === 'block') {
+    button11a.style.display = 'none';
+    button11b.style.display = 'none';
+    button11c.style.display = 'none';
+  } else {
+    button11a.style.display = 'block';
+    button11b.style.display = 'block';
+    button11c.style.display = 'block';
+  }
+  button7a.style.display = 'none';
+  button7b.style.display = 'none';
+  button7c.style.display = 'none';
+  button8a.style.display = 'none';
+  button8b.style.display = 'none';
+  button10a.style.display = 'none';
+  button10b.style.display = 'none';
+  button12a.style.display = 'none';
+  button12b.style.display = 'none';
+  button12c.style.display = 'none';
+  button12d.style.display = 'none';
+});
+
+document.getElementById('MButton3').addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var button10a = document.getElementById('button10a');
+  var button10b = document.getElementById('button10b');
+
+  if (button10a.style.display === 'block' && button10b.style.display === 'block') {
+    button10a.style.display = 'none';
+    button10b.style.display = 'none';
+  } else {
+    button10a.style.display = 'block';
+    button10b.style.display = 'block';
+  }
+  button7a.style.display = 'none';
+  button7b.style.display = 'none';
+  button7c.style.display = 'none';
+  button8a.style.display = 'none';
+  button8b.style.display = 'none';
+  button11a.style.display = 'none';
+  button11b.style.display = 'none';
+  button11c.style.display = 'none';
+  button12a.style.display = 'none';
+  button12b.style.display = 'none';
+  button12c.style.display = 'none';
+  button12d.style.display = 'none';
+});
+
+
+document.getElementById('MButton5').addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var button12a = document.getElementById('button12a');
+  var button12b = document.getElementById('button12b');
+  var button12c = document.getElementById('button12c');
+  var button12d = document.getElementById('button12d');
+
+  if (button12a.style.display === 'block' && button12b.style.display === 'block' && button12c.style.display === 'block' && button12d.style.display === 'block') {
+    button12a.style.display = 'none';
+    button12b.style.display = 'none';
+    button12c.style.display = 'none';
+    button12d.style.display = 'none';
+  } else {
+    button12a.style.display = 'block';
+    button12b.style.display = 'block';
+    button12c.style.display = 'block';
+    button12d.style.display = 'block';
+  }
+  button7a.style.display = 'none';
+  button7b.style.display = 'none';
+  button7c.style.display = 'none';
+  button8a.style.display = 'none';
+  button8b.style.display = 'none';
+  button11a.style.display = 'none';
+  button11b.style.display = 'none';
+  button11c.style.display = 'none';
+  button10a.style.display = 'none';
+  utton10b.style.display = 'none';
+    
+});
+
+
+
+
+>>>>>>> Stashed changes
