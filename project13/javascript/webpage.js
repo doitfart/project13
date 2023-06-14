@@ -488,3 +488,99 @@ document.getElementById('MButton5').addEventListener('click', function(event) {
   utton10b.style.display = 'none';
     
 });
+
+
+/*document.getElementById('studyicons').addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var buttonone = document.getElementById('button1');
+  var buttontwo = document.getElementById('button2');
+  var buttonthree= document.getElementById('button3');
+  var buttonfour = document.getElementById('button4');
+  var buttonfive = document.getElementById('button5');
+  var buttonsix = document.getElementById('button6');
+
+  buttonone.style.display = 'block';
+  buttontwo.style.display = 'block';
+  buttonthree.style.display = 'block';
+  buttonfour.style.display = 'block';
+  buttonfive.style.display = 'block';
+  buttonsix.style.display = 'block';  
+
+});
+/*
+document.getElementById('animalsightingicons').addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var button = document.getElementById('button7a');
+  var button7b = document.getElementById('button7b');
+  var button7c = document.getElementById('button7c');
+  var button7c = document.getElementById('button7c');
+  var button7c = document.getElementById('button7c');
+
+
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+
+});
+
+document.getElementById('cafeicons').addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var button7a = document.getElementById('button7a');
+  var button7b = document.getElementById('button7b');
+  var button7c = document.getElementById('button7c');
+  var button7c = document.getElementById('button7c');
+  var button7c = document.getElementById('button7c');
+  var button7c = document.getElementById('button7c');
+  var button7c = document.getElementById('button7c');
+
+
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+
+
+});
+
+document.getElementById('photoopicons').addEventListener('click', function(event) {
+  event.preventDefault();
+
+  var button7a = document.getElementById('button7a');
+  var button7b = document.getElementById('button7b');
+  var button7c = document.getElementById('button7c');
+  var button7c = document.getElementById('button7c');
+  var button7c = document.getElementById('button7c');
+
+
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+  button7c.style.display = 'block';
+
+
+});
+*/
+
+/*document.addEventListener('DOMContentLoaded', function() {
+  var hideButtonLink = document.querySelector('.sidebar-link');
+  var buttonhidden = document.querySelectorAll('.buttontobehidden');
+
+  buttonhidden.style.display = 'none';
+});
+document.addEventListener('DOMContentLoaded', function() {
+  var hideButtonLink = document.querySelector('.dropdown-btn');
+  var buttonhidden = document.querySelectorAll('.buttontobehidden');
+
+  buttonhidden.style.display = 'none';
+
+});
+*/
